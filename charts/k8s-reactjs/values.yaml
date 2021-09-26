@@ -74,7 +74,7 @@ resources:
 service:
   annotations: {}
   externalPort: 80
-  internalPort: 8080
+  internalPort: 3000
   labels: {}
   name: k8s-reactjs
   type: ClusterIP
