@@ -15,7 +15,7 @@ canary:
   progressDeadlineSeconds: 60
 deploymentLabels: {}
 env:
-    REDIS_HOST: redis-master.backend.svc.cluster.local  
+  REDIS_HOST: redis-master.backend.svc.cluster.local
 hpa:
   cpuTargetAverageUtilization: 80
   enabled: false
@@ -25,8 +25,8 @@ hpa:
   minReplicas: 2
 image:
   pullPolicy: IfNotPresent
-  repository: draft
-  tag: dev
+  repository: gcr.io/vocal-tracer-324708/k8s-reactjs
+  tag: 0.0.6
 ingress:
   annotations: {}
   classAnnotation: ""
