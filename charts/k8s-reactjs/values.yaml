@@ -15,7 +15,7 @@ canary:
   progressDeadlineSeconds: 60
 deploymentLabels: {}
 env:
-    REDIS_HOST: redis-master.backend.svc.cluster.local  
+  REDIS_HOST: redis-master.backend.svc.cluster.local  
 hpa:
   cpuTargetAverageUtilization: 80
   enabled: false
